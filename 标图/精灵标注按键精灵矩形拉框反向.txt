@@ -1,0 +1,13 @@
+GetCursorPos xx,yy
+MoveTo 1031,1037    	//保存坐标
+Delay 150               //延迟
+LeftClick 1             //点击保存
+KeyPress "Left", 1      //下一张
+MoveTo 1781,1052        //放大坐标
+Delay 150               //延迟
+LeftClick 1             //点击放大
+LeftClick 1             //点击放大
+MoveTo 28,710           //矩形坐标
+Delay 150               //延迟
+LeftClick 1             //点击
+MoveTo xx,yy            //位置复位
