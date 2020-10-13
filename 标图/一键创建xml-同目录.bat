@@ -2,7 +2,7 @@
 echo ==============================
 echo 不知道原理的别乱用，坏了别怪人
 echo.
-echo                    by TianDian
+echo                    by likeTianDian
 echo ==============================
 pause
 dir /ad /b > dir.txt
@@ -11,7 +11,7 @@ for /f %%i in (dir.txt) do (
     if exist %%i.xml (
         echo 文件夹 %%i 存在xml，已跳过
     ) else (
-        imglab.exe -c %%i.xml %%i
+        软件名字 -c %%i.xml %%i
     )
     del dir.txt
 )>>log.txt

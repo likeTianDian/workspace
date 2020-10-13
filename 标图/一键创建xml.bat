@@ -2,7 +2,7 @@
 echo ==============================
 echo 不知道原理的别乱用，坏了别怪人
 echo.
-echo                    by TianDian
+echo                    by likeTianDian
 echo ==============================
 pause
 dir /ad /b > dir.txt
@@ -14,7 +14,7 @@ for /f %%i in (dir.txt) do (
     ) else (
         dir /ad /b > dir.txt
         for /f %%j in (dir.txt) do (
-            imglab.exe -c %%j.xml %%j
+            软件名字 -c %%j.xml %%j
         )
     )
     del dir.*
