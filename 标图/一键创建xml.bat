@@ -9,12 +9,12 @@ dir /ad /b > dir.txt
 echo 本文档显示未建立xml的文件夹>log.txt
 for /f %%i in (dir.txt) do (
     cd %%i
-    if exist imglab.xml (
+    if exist *.xml (
         echo 文件夹 %%i 存在xml，已跳过
     ) else (
         dir /ad /b > dir.txt
         for /f %%j in (dir.txt) do (
-            软件名字 -c %%j.xml %%j
+            imglab -c %%j.xml %%j
         )
     )
     del dir.*
