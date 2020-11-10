@@ -1,24 +1,24 @@
 @echo off
 echo ==============================
-echo ²»ÖªµÀÔ­ÀíµÄ±ðÂÒÓÃ£¬»µÁË±ð¹ÖÈË
+echo ä¸çŸ¥é“åŽŸç†çš„åˆ«ä¹±ç”¨ï¼Œåäº†åˆ«æ€ªäºº
 echo.
 echo                    by likeTianDian
 echo ==============================
 pause
 dir /ad /b > dir.txt
-echo ±¾ÎÄµµÏÔÊ¾Î´½¨Á¢xmlµÄÎÄ¼þ¼Ð>log.txt
+echo æœ¬æ–‡æ¡£æ˜¾ç¤ºæœªå»ºç«‹xmlçš„æ–‡ä»¶å¤¹>log.txt
 for /f %%i in (dir.txt) do (
     cd %%i
-    if exist *.xml (
-        echo ÎÄ¼þ¼Ð %%i ´æÔÚxml£¬ÒÑÌø¹ý
+    if exist imglab.xml (
+        echo æ–‡ä»¶å¤¹ %%i å­˜åœ¨xmlï¼Œå·²è·³è¿‡
     ) else (
         dir /ad /b > dir.txt
         for /f %%j in (dir.txt) do (
-            Èí¼þÃû×Ö -c %%j.xml %%j
+            è½¯ä»¶åå­— -c %%j.xml %%j
         )
     )
     del dir.*
     cd ..
 )>>log.txt
 del dir.txt
-echo xmlÒÑ´´½¨Íê³É£¬°´ÈÎÒâ¼üÍË³ö
+echo xmlå·²åˆ›å»ºå®Œæˆï¼ŒæŒ‰ä»»æ„é”®é€€å‡º
