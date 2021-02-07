@@ -1,0 +1,22 @@
+KeyDown "Shift", 1
+Delay 100
+Randomize
+x = int(6*rnd + 750)
+Randomize
+y = Int(6*rnd + 666)
+MoveTo x,y
+Delay 100
+LeftDown 1
+Delay 100
+Randomize
+x = int(6*rnd + 922)
+Randomize
+y = Int(6*rnd + 315)
+MoveTo x,y
+Delay 100
+LeftUp 1
+Delay 100
+KeyUp "Shift", 1
+Delay 100
+KeyPress "Down", 1
+Delay 100
