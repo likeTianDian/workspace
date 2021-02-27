@@ -1,10 +1,10 @@
 KeyDown "Shift", 1
 Delay 100
-MoveTo 181,1062
+MoveTo x,y
 Delay 100
 LeftDown 1
 Delay 100
-MoveTo 376,706 
+MoveTo x,y
 Delay 100
 LeftUp 1
 Delay 100
